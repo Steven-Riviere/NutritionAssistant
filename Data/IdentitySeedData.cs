@@ -15,6 +15,7 @@ namespace NutritionAssistant.Data
 
             const string roleName = "Admin";
 
+
             if (!await roleManager.RoleExistsAsync(roleName))
             {
                 await roleManager.CreateAsync(new IdentityRole(roleName));
